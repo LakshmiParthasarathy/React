@@ -1,0 +1,29 @@
+image: node:16.17.1
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+build-pages:
+  stage: build
+  script:
+    - $env:CI=$false
+    - npm install
+    - npm run build
+    - Remove-Item 'public' -Recurse
+    - Rename-Item -Path 'build' -NewName 'public'
+  artifacts:
+    paths:
+      - public
+
+pages:
+  stage: deploy
+  script:
+    - ls
+  artifacts:
+    paths:
+      - public  
