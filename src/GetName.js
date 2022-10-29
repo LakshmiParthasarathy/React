@@ -1,12 +1,17 @@
 import React, {useState}from "react";
-
+const total=100
 
 export default  function Form() {
   const [state, setState] = React.useState({
-    firstName: "",
-    lastName: "",
-    display:null
+    grocery: "",
+    childCare: "",
+    mortgage:" ",
+    insurance:" ",
+    totalSum:0,
+    mBalance:0,
+    
   })
+
 
   function handleChange(evt) {
     const value = evt.target.value;
@@ -18,37 +23,20 @@ export default  function Form() {
   
   return (
     <form>
-      <label>
-        First name
-        <input
-          type="text"
-          name="firstName"
-          value={state.firstName}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Last name
-        <input
-          type="text"
-          name="lastName"
-          value={state.lastName}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        display
-        <input
-          type="text"
-          name="display"
-          value={state.firstName+state.lastName}
-          onChange={handleChange}
-        />
-      </label>
+      
+      <label>   Total Monthly Budget:<input type="text" value={total}/> </label>
+        <label>      Monthly Balance:<input type="text" onChange={handleChange} value={state.total-state.childCare}/><br/><br/></label>
+
+                <p> Expenses: </p>
+
+               <label> Child Care: <input type="text" value={state.childCare} onChange={handleChange}/> <br/> </label>
+               <label>Insurance: <input type="text" value={state.insurance} onChange={handleChange}/><br/> </label>
+               <label>Mortage: <input type="text" value={state.mortgage} onChange={handleChange}/><br/></label>
+               <label>Grocery: <input type="text" value={state.grocery} onChange={handleChange}/><br/></label>
+      
     </form>
   );
 }
-
 
 
 

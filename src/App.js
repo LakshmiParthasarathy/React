@@ -1,6 +1,9 @@
 import './App.css';
 import ExpenseCalculator from './ExpenseCalculator';
+import sample from './sample';
 import GetName from './GetName';
+
+
 
 
 function App() {
