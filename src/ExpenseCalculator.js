@@ -6,10 +6,7 @@ const mBalance=' '
 
 
 class ExpenseCalculator extends Component {
-    constructor()
-    {
-        super();
-        this.state=
+   state=
         {
           childCare:' ',
           insurance:' ',
@@ -19,23 +16,33 @@ class ExpenseCalculator extends Component {
           
         }
 
-        this.calculate=this.calculate.bind(this)
-        this.display=this.display.bind(this)
-    }
+       // this.calculate=this.calculate.bind(this)
+        //this.display=this.display.bind(this)
+    
 
-    calculate(e)
+     calculate(evt)
     {
+      /*  const{name,value}=e.target
+        this.setState({[name]:value})
+        console.log(e.target.value)*/
+        const value=evt.target.value;
+        setState({
+            ...state,
+            [evt.target.name]:value
+        });
+    }
+    /*{
         this.setState({
             
             childCare:parseInt(e.target.value),
             insurance:parseInt(e.target.value),
             mortage:parseInt(e.target.value),
             grocery:parseInt(e.target.value),
-        })
+        })*/
         
-    }
+    
 
-    display()
+    display=(e)=>
     {
         
        this.setState({
@@ -54,10 +61,10 @@ class ExpenseCalculator extends Component {
 
                 <p> Expenses: </p>
 
-                Child Care: <input type="text" onClick={this.calculate}/> <br/>
-                Insurance: <input type="text" onClick={this.calculate}/><br/>
-                Mortage: <input type="text" onClick={this.calculate}/><br/>
-                Grocery: <input type="text" onClick={this.calculate}/><br/>
+                Child Care: <input type="text" value={this.childCare} defaultValue=" " onChange={this.calculate}/> <br/>
+                Insurance: <input type="text" value={this.insurance}onChange={this.calculate}/><br/>
+                Mortage: <input type="text" value={this.mortage} onChange={this.calculate}/><br/>
+                Grocery: <input type="text" value={this.grocery}onChange={this.calculate}/><br/>
 
             </div>
         );
