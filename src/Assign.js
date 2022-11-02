@@ -58,9 +58,6 @@ class Assign extends Component {
       }
     }
 
-
-
-
     render() {
       const bal = (parseInt(this.state.insurance)+parseInt(this.state.grocery)+parseInt(this.state.mortgage)+parseInt(this.state.childcare))-parseInt(this.state.budget)
         return (
