@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const DoP= styled.p`
+background-color: Green;
+color: lightblue;
+font-size:32px;
+`;
 
 class Assign extends Component {
     constructor()
@@ -67,7 +74,7 @@ class Assign extends Component {
                 Mortgage:<input type="number" onChange={this.setAmount} id="mor"/> 
                 Childcare:<input type="number" onChange={this.setAmount} id="cc"/>
                 Grocery:<input type="number" onChange={this.setAmount} id="gro"/> 
-                <p> Balance {bal}</p>
+                <DoP> Balance {bal}</DoP>
             </div>
         );
     }

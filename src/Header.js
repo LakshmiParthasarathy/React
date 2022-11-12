@@ -1,10 +1,16 @@
 import React from 'react';
+import {styles} from './styles';
 
 function Header(props) {
+
+    const myStyle={
+        color: 'blue',
+        texttransform:'capitalize'
+    }
     return (
         <div>
-            <h3>Course name: {props.course}</h3>
-            <h4> Duration: {props.duration}</h4>
+            <h3 style={myStyle}>Course name: {props.course}</h3>
+            <h4 style={styles.HeaderStyle}> Duration: {props.duration}</h4>
         </div>
     );
 }

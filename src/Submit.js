@@ -1,15 +1,14 @@
 
 import React, {useState,useEffect} from 'react';
 
-function Sam(props) {
+function Submit(props) {
     
-    const [name, setName] = useState('');
     const [inputField , setInputField] = useState([])
      let productId;
      let productName;
      let productDesc;
      let prodPrice;  
-    
+    let filter=" "
  
 
     function inputsHandler (e) {
@@ -54,11 +53,7 @@ function Sam(props) {
        document.getElementById("productDesc").value=''
        document.getElementById("productPrice").value=''
     })
-    
-    const filteredProducts = inputField.filter((vals) =>{
-        vals.productName.toLowerCase().includes(inputField.toLowerCase());
-        vals.productDesc.toLowerCase().includes(inputField.toLowerCase());
-    })
+
    
      
    /*let Datasearch=inputField.filter(item=>{
@@ -69,21 +64,8 @@ function Sam(props) {
 
     return (
         <div>
-            <input
-        type="search"
-        value={productName}
-        onChange={filteredProducts}
-        className="input"
-        placeholder="Filter"
-        /><br/>
-               
-               <ul>
-        {filteredProducts.map((vals) => (
-          <li>{vals.productDesc}</li>,
-          <li>{vals.productName}</li>
-        ))}
-      </ul>
-           
+            Search:<input type="text" placeholder='Search for product'/>
+            <hr/>
             ProductID: <input 
             type="text" 
             id="productId" 
@@ -116,12 +98,8 @@ function Sam(props) {
     
             <button onClick={submitButton}>Submit Now</button>
 
-      
-    </div>
-  );
-
-        
-    
+        </div>
+    )
 }
 
-export default Sam
+export default Submit
