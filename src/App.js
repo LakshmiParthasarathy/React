@@ -64,8 +64,8 @@ function App() {
   <div className='App'>
   {/* <Arrayit data={names}/> */}
 
-  <Comp/>
-  {/*<Home/>*/}
+  {/*<Comp/>*/}
+  <Home/>
   
  </div>
   );
