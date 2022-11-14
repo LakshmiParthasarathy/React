@@ -38,7 +38,7 @@ import Index from './Login/Index';
 import Home from './crud/Home';
 import Clock from './Clock';
 import Comp from './Comp';
-
+import FetchData from './api/FetchData';
 
 
 function App() {
@@ -65,6 +65,7 @@ function App() {
   {/* <Arrayit data={names}/> */}
 
   {/*<Comp/>*/}
+  {/*<FetchData/>*/}
   <Home/>
   
  </div>

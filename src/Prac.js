@@ -8,6 +8,15 @@ y=10;document. Write ("This is \a program,");
 let result =add(x,y);
 console.log(result)*/
 
+const x = 1;
+const y = 1;
+
+console.log(+x);
+// expected output: 1
+
+console.log(-y);
+// expected output: -1
+
 
 console.log ("This is \ a program,");
 
