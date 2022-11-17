@@ -40,6 +40,8 @@ import Clock from './Clock';
 import Comp from './Comp';
 import FetchData from './api/FetchData';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
 
 
 function App() {
