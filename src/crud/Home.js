@@ -8,7 +8,7 @@ function Home(props) {
         <div>
              <Router>
                 <Routes>
-                    <Route path = '/' element={<EmpDetails />} />
+                    <Route path = '/lakshmi-react-code' element={<EmpDetails />} />
                     <Route path = '/create' element={<Add />} />
                     <Route path = '/edit' element={<Edit />} />
                 </Routes>
