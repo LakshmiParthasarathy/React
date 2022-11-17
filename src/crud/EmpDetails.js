@@ -1,7 +1,7 @@
 import React from 'react';
 import Employees from './Employees';
 import {useNavigate, Link} from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 

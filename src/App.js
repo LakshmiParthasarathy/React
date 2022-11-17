@@ -39,6 +39,7 @@ import Home from './crud/Home';
 import Clock from './Clock';
 import Comp from './Comp';
 import FetchData from './api/FetchData';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {

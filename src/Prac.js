@@ -8,6 +8,25 @@ y=10;document. Write ("This is \a program,");
 let result =add(x,y);
 console.log(result)*/
 
+
+const arr = [1, 2, 4, 4, 4, 2, 2, 2, 2]
+
+let n = 3;
+
+
+
+const result = arr.reduce((a,v)=>(
+
+a.filter(f=>f===v).length < n ?a.push(v):a,a),[]);
+
+
+
+console.log(result);
+
+
+var a;
+console.log(typeof a)
+
 const x = 1;
 const y = 1;
 
