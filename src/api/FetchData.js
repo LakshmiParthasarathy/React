@@ -4,7 +4,8 @@ function FetchData(props) {
     const[data, setData] = useState([])
     
     function getData(){
-        const apiUrl = 'https://gorest.co.in/public/v2/users'
+        //const apiUrl = 'https://gorest.co.in/public/v2/users'
+        const apiUrl='http://localhost:8083/getUsers'
         fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => setData(data))
@@ -18,9 +19,7 @@ function FetchData(props) {
                   <tr>
                     <th>ID</th>
                     <th>NAME</th>
-                    <th>EMAIL</th>
-                    <th>GENDER</th>
-                    <th>STATUS</th>
+                 
                   </tr>
                 </thead>
                 <tbody>
@@ -29,12 +28,10 @@ function FetchData(props) {
                         ?
                         data.map((item)=>{
                             return(
-                                <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.email}</td>
-                                    <td>{item.gender}</td>
-                                    <td>{item.status}</td>
+                                <tr key={item.userId}>
+                                    <td>{item.userId}</td>
+                                    <td>{item.userName}</td>
+                                   
                                    
                                 </tr>
                             )

@@ -18,7 +18,6 @@ import Register from './Register';
 import Guess from './Guess';
 import Tryit  from './Tryit';
 import Countit from './Countit';
-import Expense from './Expense';
 import Header from './Header';
 import CompA from './CompA';
 import CompB from './CompB';
@@ -29,7 +28,6 @@ import Submit from './Submit';
 import Assignsearch from './Assignsearch';
 import SearchIt from './SearchIt';
 import Practiceit from './Practiceit';
-import Sam from './Sam';
 import DynamicRender from './DynamicRender';
 import NumberKey from './NumberKey';
 import Arrayit from './Arrrayit';
@@ -42,6 +40,16 @@ import FetchData from './api/FetchData';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
+import ReferenceDemo from './ReferenceDemo';
+import Simple from './Simple';
+import Football from './Football';
+import Goal from './Goal';
+import MyForm from './MyForm';
+import FavoriteColor from './FavoriteColor';
+import Timer from './Timer';
+import FuncLogicHome from './Func/FuncLogicHome';
+import ClassLogin from './ClassLogin';
+import Sample1 from './Sample1';
 
 
 function App() {
@@ -65,11 +73,31 @@ function App() {
   ]*/
   return ( //jsx-html inside js
   <div className='App'>
+    {/*<Timer/>*/}
   {/* <Arrayit data={names}/> */}
 
   {/*<Comp/>*/}
   {/*<FetchData/>*/}
-  <Home/>
+  {/*<Tryit/>*/}
+
+  {/*<ReferenceDemo/>*/}
+
+{/*<Goal isGoal={true}/>
+<FavoriteColor/>*/}
+{/*<Home/>*/}
+
+{/*<ClassLogin/>*/}
+
+<CounterHOC/>
+<CompA/>
+<CompB/>
+
+{/*<DynamicRender/>*/}
+
+{/*<FetchData/>*/}
+
+
+
   
  </div>
   );

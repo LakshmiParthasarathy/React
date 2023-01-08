@@ -41,9 +41,9 @@ submit()
         return (
             <div>
                
-               FirstName:<input type="text" onChange={this.firstDisplay}/>
-               LastName:<input type="text" onChange={this.lastDisplay}/> 
-                <button type="button" onClick={this.submit}> submit</button>
+               FirstName:<input type="text" onChange={this.firstDisplay}/><br/><br/>
+               LastName:<input type="text" onChange={this.lastDisplay}/> <br/><br/>
+                <button type="button" onClick={this.submit}> SUBMIT</button><br/>
                 <p>Name:  {this.state.fullName}</p>
             </div>
         );

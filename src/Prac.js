@@ -8,6 +8,49 @@ y=10;document. Write ("This is \a program,");
 let result =add(x,y);
 console.log(result)*/
 
+function modifyArray(arr1, callback) {
+    // do something to arr here
+    arr1.push(100);
+    // then execute the callback function that was passed
+    callback();
+  }
+  
+  var arr1 = [1, 2, 3, 4, 5];
+  
+  modifyArray(arr1, function() {
+    console.log("array has been modified", arr1);
+  });
+
+  function makeKitchen() {
+
+    var trashBags = ['A', 'B', 'C']; // only 3 at first
+
+ 
+
+    return {
+
+      getTrashBag: function() {
+
+        return trashBags.pop();
+
+      }
+
+    };
+
+  }
+
+ 
+
+  var kitchen = makeKitchen();
+
+ 
+
+  console.log(kitchen.getTrashBag());
+
+ console.log(kitchen.getTrashBag());
+
+ console.log(kitchen.getTrashBag());
+
 
 const arr = [1, 2, 4, 4, 4, 2, 2, 2, 2]
 
