@@ -1,37 +1,37 @@
-import React, { Component} from 'react';
+//import React, { Component} from 'react';
 
-const total=100;
-const sum=' '
-const mBalance=' '
+//const total=100;
+//const sum=' '
+//const mBalance=' '
 //let[sum,mBalance]=React.useState();
 
 
-class ExpenseCalculator extends Component {
-   state=
-        {
+//class ExpenseCalculator extends Component {
+   //state=
+        /*{
           childCare:' ',
           insurance:' ',
           mortage:' ',
           grocery:' ',
           mBalance:' ',
           
-        }
+        }*/
 
        // this.calculate=this.calculate.bind(this)
         //this.display=this.display.bind(this)
     
 
-     calculate(evt)
-    {
+     //calculate(evt)
+    //{
       /*  const{name,value}=e.target
         this.setState({[name]:value})
         console.log(e.target.value)*/
-        const value=evt.target.value;
-        setState({
-            ...state,
-            [evt.target.name]:value
-        });
-    }
+        //const value=evt.target.value;
+        //setState({
+           // ...state,
+            //[evt.target.name]:value
+        //});
+    //}
     /*{
         this.setState({
             
@@ -43,7 +43,7 @@ class ExpenseCalculator extends Component {
         
     
 
-    display=(e)=>
+    /*display=(e)=>
     {
         
        this.setState({
@@ -53,10 +53,10 @@ class ExpenseCalculator extends Component {
 
     })
     
-}
-    render() {
-        return (
-            <div>
+}*/
+    //render() {
+       // return (
+         {/*   <div>
                 Total Monthly Budget:<input type="text" value={total}/>
                 Monthly Balance:<input type="text" onChange={this.display} value={this.state.mBalance}/><br/><br/>
 
@@ -70,6 +70,6 @@ class ExpenseCalculator extends Component {
             </div>
         );
     }
-}
+}*/}
 
-export default ExpenseCalculator;
+//export default ExpenseCalculator;
